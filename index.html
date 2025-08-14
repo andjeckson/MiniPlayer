@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>MiniPlayer</title>
+  
+  <!-- HTML -->
+  
+  <!-- BOXICONS -->
+  <link rel="stylesheet" href="assets/boxicons/css/boxicons.min.css" type="text/css"/>
+  
+  <!-- JSMEDIATAGS -->
+  <script src="assets/js/jsmediatags/jsmediatags.min.js"></script>
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  
+  <div class="mini-player">
+    
+      <div class="capa">
+          <img  width="200"
+                height="200"
+                src="assets/img/capa.jpg"  
+                alt="Capa"
+                id="imagem-do-cd">
+      </div>
+      
+      <div class="agulha-de-vinil">
+        <div class="circulo"></div>
+        <div class="retangulo-1"></div>
+        <div class="retangulo-2"></div>
+        <div class="agulha"></div>
+      </div>
+      
+      <div class="botao-upload">
+         <label for="file-upload">
+           <input type="file"
+                  accept="audio/MPEG"
+                  id="file-upload"
+                  multiple>
+             <i class="bx bx-upload"></i>
+        </label>
+      </div>
+      
+      <header class="conteudo">
+          <h1 id="nome-da-musica">Sem músicas</h1>
+          <p id="nome-do-artista">Por favor, faça upload.</p>
+      </header>
+      
+      <section class="controles">
+        <input type="range" 
+               id="barra-de-controle"
+               max="0"
+               value="0">
+               
+        <div class="temporizador">
+             <p id="temporizador-atual">0:00</p>
+             <p id="temporizador-final">0:00</p>
+        </div>
+        <div class="reproducao">
+           <button id="botao-voltar-musica">
+              <i class="bx bx-skip-previous"></i>
+          </button>
+           <button id="botao-play-pause"
+                   class="play-pause">
+                      <i class="bx bx-play"></i>
+           </button>
+           <button id="botao-pular-musica">
+                 <i class="bx bx-skip-next"></i>
+          </button>
+        </div>
+     </section>
+  </div>
+  
+  
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
